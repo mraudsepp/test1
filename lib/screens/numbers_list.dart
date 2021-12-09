@@ -39,13 +39,10 @@ class _NumberListState extends State<NumberList> {
           body: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              ElevatedButton(
-                  onPressed: () {
-                    setState(() {
-
-
-                    });
-                  }, child: const Text(' Get new random number'),
+              MaterialButton(
+                  onPressed: getNumbersfromApi,
+                   child: const Text(' Get new random number'),
+                color: Colors.grey,
               ),
               Container(
               height: 500,
